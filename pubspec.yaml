@@ -1,5 +1,5 @@
 name: startup
-description: A new Flutter project.
+description: Startup is a flutter app that generate infinite startup names.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
