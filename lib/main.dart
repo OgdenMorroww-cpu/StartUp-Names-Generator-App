@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:startup/firebase_options.dart';
 import 'package:startup/screen/login_screen.dart';
 import 'package:startup/screen/random_words.dart';
+import 'package:startup/screen/welcome.dart';
 import 'package:startup/widgets/profile_page.dart';
 
 void main() async {
@@ -28,9 +29,10 @@ class StartUpNames extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        "/": (context) => LoginScreen(),
+        "/": (context) => WelcomeScreen(),
+        "loginscreen": (context) => LoginScreen(),
         "random": (context) => RandomWords(),
-        "profile": (context) => ProfilePage()
+        "profile": (context) => ProfilePage(),
       },
     );
   }
