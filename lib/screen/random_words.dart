@@ -91,6 +91,14 @@ class _RandomWordsState extends State<RandomWords> {
                   },
                   icon: Icon(Icons.arrow_back_ios),
                 ),
+                actions: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "profile");
+                    },
+                    icon: Icon(Icons.account_box),
+                  ),
+                ],
               ),
               body: ListView(children: divided),
             ),

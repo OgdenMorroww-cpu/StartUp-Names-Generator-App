@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:startup/firebase_options.dart';
 import 'package:startup/screen/login_screen.dart';
 import 'package:startup/screen/random_words.dart';
+import 'package:startup/widgets/profile_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +30,7 @@ class StartUpNames extends StatelessWidget {
       routes: {
         "/": (context) => LoginScreen(),
         "random": (context) => RandomWords(),
+        "profile": (context) => ProfilePage()
       },
     );
   }
